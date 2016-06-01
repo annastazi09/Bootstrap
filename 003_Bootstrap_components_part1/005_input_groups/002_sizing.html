@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Input group sizing</title>
+    <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .box {
+            margin: 200px auto;
+            width: 280px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!--Класс "input-group-addon" добавляет в элемент формы специальную область для необходимых символов-->
+
+        <div class="input-group input-group-lg"> <!--size lg-->
+            <span class="input-group-addon">@</span>
+            <input type="text" class="form-control" placeholder="Username" />
+        </div>
+        <br />
+        <div class="input-group">
+            <input type="text" class="form-control" />
+            <span class="input-group-addon">.00</span>
+        </div>
+        <br />
+        <div class="input-group input-group-sm"> <!--size sm-->
+            <span class="input-group-addon">$</span>
+            <input type="text" class="form-control" />
+            <span class="input-group-addon">.00</span>
+        </div>
+    </div>
+</body>
+</html>

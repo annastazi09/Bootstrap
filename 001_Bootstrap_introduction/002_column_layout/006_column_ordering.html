@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Колоночная верстка. Изменение порядка следования столбцов.</title>
+
+    <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        .col-md-12 {
+            background: #dedede;
+        }
+
+        .col-md-9 {
+            background: #ffb4b4;
+        }
+
+        .col-md-3 {
+            background: #fff1b9;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!--push - число колонок на которое нужно сместиться вправо-->
+    <!--pull - число колонок на которое нужно сместиться влево-->
+
+    <!--первая строка-->
+
+    <div class="row">
+        <div class="col-md-12">
+            <p>Ширина блока в 12 колонок.Полноценная строка</p>
+        </div>
+    </div>
+
+    
+    <!--вторая строка-->
+    <div class="row">
+        <div class="col-md-9 col-md-push-3"><!--Столбец шириной  в 9 колонок, перемещенный вправо на 3 колонки-->
+            <p>Ширина блока в 9 колонок</p>
+        </div>
+        <div class="col-md-3 col-md-pull-9"><!--Столбец шириной  в 3 колонки, перемещенный влево на 9 колонок-->
+            <p>Ширина блока в 3 колонки</p> 
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

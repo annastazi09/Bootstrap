@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Non-active points in Dropdowns</title>
+    <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../Bootstrap/js/jquery-1.11.3.min.js"></script>
+    <script src="../Bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        .dropdown {
+            margin: 200px auto;
+            width: 170px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+            Dropdown
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+            <li role="menuitem"><a role="menuitem" tabindex="-1" href="#">Regular link</a></li>
+
+            <li role="menuitem" class="disabled"><a role="menuitem" tabindex="-1" href="#">Disabled link</a></li>
+            <li role="menuitem"><a role="menuitem" tabindex="-1" href="#">Another link</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

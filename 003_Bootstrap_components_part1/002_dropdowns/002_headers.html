@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Headers and separators in Dropdowns</title>
+    <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../Bootstrap/js/jquery-1.11.3.min.js"></script>
+    <script src="../Bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        .dropdown {
+            margin: 200px auto;
+            width: 170px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+            Dropdown
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+
+            <li><a role="presentation" class="dropdown-header">Dropdown header1</a></li> <!--header-->
+
+            <li><a role="menuitem" tabindex="-2" href="#">Action</a></li>
+            <li><a role="menuitem" tabindex="-1" href="#">Action1</a></li>
+            <li><a role="menuitem" tabindex="-1" href="#">Action2</a></li>
+            <li class="divider"></li>
+
+            <li><a role="presentation" class="dropdown-header">Dropdown header2</a></li> <!--header-->
+
+            <li><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

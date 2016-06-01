@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Колоночная верстка. Гибкий макет.</title>
+
+    <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <style>
+        .col-md-12 {
+            background: #dedede;
+        }
+
+        .col-md-2 {
+            background: #ffb4b4;
+        }
+
+        .col-md-8 {
+            background: #fff1b9;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid "><!--делает блок растянутым по всей доступной ширине-->
+
+    <!--первая строка-->
+    <div class="row">
+        <div class="col-md-12">
+            <p>Ширина блока в 12 колонок</p>
+        </div>
+    </div>
+
+    <!--вторая строка-->
+    <div class="row">
+        <div class="col-md-2">
+            <p>Ширина блока в 2 колонки</p>
+        </div>
+        <div class="col-md-8">
+            <p>Ширина блока в 8 колонок</p>
+        </div>
+        <div class="col-md-2">
+            <p>Ширина блока в 2 колонки</p>
+        </div>
+    </div>
+
+    <!--третья строка-->
+    <div class="row">
+        <div class="col-md-12">
+            <p>Ширина блока в 12 колонок</p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Колоночная верстка.Простой макет</title>
+
+    <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .col-md-12 {
+            background: #dedede;
+        }
+        .col-md-3 {
+            background: #ffb4b4;
+        }
+
+        .col-md-6 {
+            background: #fff1b9;
+        }
+    </style>
+</head>
+<body>
+<div class="container"> <!--делает блок фиксированой ширины-->
+    
+    <!--первая строка-->
+    <div class="row">
+        <div class="col-md-12">
+            <p>Ширина блока в 12 колонок</p>
+        </div>
+    </div>
+
+    <!--вторая строка-->
+    <div class="row">
+        <div class="col-md-3">
+            <p>Ширина блока в 3 колонки</p>
+        </div>
+        <div class="col-md-6">
+            <p>Ширина блока в 6 колонок</p>
+        </div>
+        <div class="col-md-3">
+            <p>Ширина блока в 3 колонки</p>
+        </div>
+    </div>
+
+    <!--третья строка-->
+    <div class="row">
+        <div class="col-md-12">
+            <p>Ширина блока в 12 колонок</p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

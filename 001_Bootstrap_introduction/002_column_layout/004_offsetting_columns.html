@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Отступы от колонок</title>
+
+    <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        .col-md-12 {
+            background: #dedede;
+        }
+
+        .col-md-4, .col-md-6 {
+            background: #ffb4b4;
+        }
+
+        .col-md-3 {
+            background: #fff1b9;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!--первая строка-->
+
+    <div class="row">
+        <div class="col-md-4"><!--Простой столбец шириной в 4 колонки-->
+            <p>Ширина блока в 4 колонки</p>
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+            <p>Ширина блока в 4 колонки. Отступ слева - 4 колонки</p> <!--Столбец шириной в 4 колонки, перемещенный на 4 колонки вправо -->
+        </div>
+        
+    </div>
+
+    <!--вторая строка-->
+
+    <div class="row">
+        <div class="col-md-3 col-md-offset-3">
+            <p>Ширина блока в 3 колонки. Отступ слева - 3 колонки</p><!--Столбец шириной в 3 колонки, перемещенный на 3 колонки вправо-->
+        </div>
+        <div class="col-md-3 col-md-offset-3">
+            <p>Ширина блока в 3 колонки. Отступ слева - 3 колонки</p> <!--Столбец шириной в 3 колонки, перемещенный на 3 колонки вправо-->
+        </div>
+
+    </div>
+
+    <!--Третья строка-->
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <p>Ширина блока в 6 колонoк. Отступ слева - 3 колонки</p><!--Столбец шириной в 6 колонoк, перемещенный на 3 колонки вправо-->
+        </div>
+    </div>
+
+    <!--Четвертая строка-->
+
+    <div class="row">
+        <div class="col-md-12">
+            <p>Ширина блока в 12 колонок.Полноценная строка</p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
